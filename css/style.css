@@ -1,0 +1,30 @@
+.layout {
+    position: absolute;
+    width: 1297px;
+    height: 637px;
+    background-color: #FFF;
+    border: 3px solid #000;
+}
+
+.layout img {
+    position: absolute;
+    width: 1297px;
+    height: 637px;
+}
+
+.playerMario {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 450px;
+    margin-left: 200px;
+}
+
+.playerMario img {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+
+    background: url(mario.png);
+
+}
