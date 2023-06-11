@@ -26,5 +26,44 @@
     height: 105px;
 
     background: url(mario.png);
+}
 
+.buttons {
+    width: 1297px;
+    height: 87px;
+    position: absolute;
+    margin-top: 560px;
+}
+
+.jump {
+    position: absolute;
+    width: 80px;
+    height: 42px;
+    margin-left: 100px;
+    margin-block-start: 20px;
+
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+}
+
+.right {
+    position: absolute;
+    width: 80px;
+    height: 42px;
+    margin-left: 200px;
+    margin-block-start: 20px;
+
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+}
+
+.left {
+    position: absolute;
+    width: 80px;
+    height: 42px;
+    margin-left: 300px;
+    margin-block-start: 20px;
+
+    background: #D9D9D9;
+    mix-blend-mode: normal;
 }
