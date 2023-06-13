@@ -1,24 +1,37 @@
 .layout {
     position: absolute;
-    width: 1297px;
-    height: 637px;
+    width: 1427px;
+    height: 688px;
     background-color: #FFF;
     border: 3px solid #000;
 }
 
 .layout img {
     position: absolute;
-    width: 1297px;
-    height: 637px;
+    width: 1427px;
+    height: 688px;
 }
 
 .playerMario {
     position: absolute;
     width: 150px;
     height: 150px;
-    margin-top: 450px;
-    margin-left: 200px;
+} 
+
+/*
+Log de troca de sprite
+.playerMario {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: green;
+    margin-top: 491px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+*/
 
 .playerMario img {
     position: absolute;
@@ -29,15 +42,15 @@
 }
 
 .buttons {
-    width: 1297px;
+    width: 600px;
     height: 87px;
     position: absolute;
-    margin-top: 560px;
+    margin-top: 600px;
 }
 
 .jump {
     position: absolute;
-    width: 80px;
+    width: 90px;
     height: 42px;
     margin-left: 100px;
     margin-block-start: 20px;
@@ -48,18 +61,18 @@
 
 .right {
     position: absolute;
-    width: 80px;
+    width: 90px;
     height: 42px;
     margin-left: 200px;
     margin-block-start: 20px;
 
     background: #D9D9D9;
-    mix-blend-mode: normal;
+    mix-blend-mode: normal; 
 }
 
 .left {
     position: absolute;
-    width: 80px;
+    width: 90px;
     height: 42px;
     margin-left: 300px;
     margin-block-start: 20px;
