@@ -16,22 +16,7 @@
     position: absolute;
     width: 150px;
     height: 150px;
-} 
-
-/*
-Log de troca de sprite
-.playerMario {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-color: green;
-    margin-top: 491px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-*/
 
 .playerMario img {
     position: absolute;
@@ -54,6 +39,8 @@ Log de troca de sprite
     height: 42px;
     margin-left: 100px;
     margin-block-start: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 
     background: #D9D9D9;
     mix-blend-mode: normal;
@@ -65,9 +52,11 @@ Log de troca de sprite
     height: 42px;
     margin-left: 200px;
     margin-block-start: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 
     background: #D9D9D9;
-    mix-blend-mode: normal; 
+    mix-blend-mode: normal;
 }
 
 .left {
@@ -76,7 +65,10 @@ Log de troca de sprite
     height: 42px;
     margin-left: 300px;
     margin-block-start: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 
     background: #D9D9D9;
     mix-blend-mode: normal;
 }
+
