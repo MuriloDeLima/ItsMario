@@ -28,6 +28,26 @@
 //     }
 // )
 
+var mario = false;
+var luigi = false
+
+$("#BtnMario").click(
+    function () {
+        $("#containerMario").css({ "display": "none" })
+        $("#layout").css({ "display": "flex" })
+        mario = true;
+    }
+)
+
+$("#BtnLuigi").click(
+    function () {
+        $("#containerMario").css({ "display": "none" })
+        $("#layout").css({ "display": "flex" })
+        $("#mario").attr("src", "../assets/luigi.gif")
+        luigi = true;
+    }
+)
+
 
 var posX = 200
 var layoutWidth = $("#layout").width()
@@ -35,10 +55,13 @@ $("#playerMario").css({ "left": posX + "px" })
 
 $("#right").click(
     function () {
-        $("#mario").attr('src', '../assets/mario.gif')
-
+        if (mario) {
+            $("#mario").attr('src', '../assets/mario.gif')
+        } else {
+            $("#mario").attr('src', '../assets/luigi.gif')
+        }
         if (posX < layoutWidth - 150) {
-            posX += 100 
+            posX += 100
             $("#playerMario").animate({ left: posX + "px" }, { duration: 200 })
         } else {
             alert("Parece que este é o FIM <->")
@@ -46,9 +69,14 @@ $("#right").click(
 
     }
 )
+
 $("#left").click(
     function () {
-        $("#mario").attr('src', '../assets/marioLeft.gif')
+        if (mario) {
+            $("#mario").attr('src', '../assets/marioLeft.gif')
+        } else {
+            $("#mario").attr('src', '../assets/luigi.gif')
+        }
         if (posX > 0) {
             posX -= 100
             $("#playerMario").animate({ left: posX + "px" }, { duration: 200 })
@@ -76,3 +104,5 @@ $("#jump").click(
 
     }
 )
+
+

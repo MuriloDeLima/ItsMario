@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&family=PT+Sans:ital,wght@0,400;1,700&family=Poppins:ital@1&family=Roboto:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .layout {
     position: absolute;
-    width: 1427px;
-    height: 688px;
+    width: 100%;
+    height: 100vh;
     background-color: #FFF;
-    border: 3px solid #000;
+    display: none;
 }
 
 .layout img {
     position: absolute;
-    width: 1427px;
-    height: 688px;
+    width: 100%;
+    height: 100vh;
 }
 
 .playerMario {
     position: absolute;
-    width: 150px;
+    width: 150x;
     height: 150px;
 }
 
@@ -23,7 +31,7 @@
     width: 105px;
     height: 105px;
 
-    background: url(mario.png);
+    background: url(mario.gif);
 }
 
 .buttons {
@@ -72,3 +80,101 @@
     mix-blend-mode: normal;
 }
 
+.screenMario {
+    position: relative;
+    width: 700px;
+    height: 370px;
+    background-color: #928f8f;
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.btnPerso {
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerMario {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BtnMario {
+    width: 105px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fc0000;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.BtnLuigi {
+    width: 105px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #11d811;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.teste {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFF
+}
+
+.text {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.textScreen {
+    color: #000;
+}
+
+.textM {
+    color: #fc0000;
+}
+
+.textA {
+    color: #11d811;
+}
+
+.textR {
+    color: #fdfd00;
+}
+
+.textI {
+    color: #2b84eb;
+}
+
+.textO {
+    color: #11d811;
+}
+
+.canoMario{
+    width: 350px;
+    height: 10px;
+    position: absolute;
+}
+
+.cano{
+    width: 1000px;
+}
