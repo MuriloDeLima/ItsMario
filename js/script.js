@@ -75,7 +75,7 @@ $("#left").click(
         if (mario) {
             $("#mario").attr('src', '../assets/marioLeft.gif')
         } else {
-            $("#mario").attr('src', '../assets/luigi.gif')
+            $("#mario").attr('src', '../assets/luigiLeft.gif')
         }
         if (posX > 0) {
             posX -= 100
@@ -87,19 +87,19 @@ $("#left").click(
     }
 )
 
-var posY = 45
+var posY = 30
 
 $("#playerMario").css({ "bottom": posY + "px" })
 $("#jump").click(
     function () {
         posY += 60
-        if (posY > 105) {
-            posY = 105
+        if (posY > 90) {
+            posY = 90
         }
 
         $("#playerMario").animate({ bottom: posY + "px" }, { duration: 100 })
         setTimeout(function () {
-            $("#playerMario").animate({ bottom: "45px" }, { duration: 100 })
+            $("#playerMario").animate({ bottom: "30px" }, { duration: 100 })
         }, 100)
 
     }
