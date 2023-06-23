@@ -1,35 +1,5 @@
-// lógica de posicionamento do personagem direita e esquerda
-// var posX = 200
-// var layoutWidth = $("#layout").width()
-// $("#playerMario").css({ "left": posX + "px" })
-
-// $("#right").click(
-//     function () {
-//         $("#playerMario").css('background-color', 'red').text("Direita")
-//         if (posX < layoutWidth - 150) {
-//             posX += 100
-//             $("#playerMario").animate({ left: posX + "px" }, { duration: 200 })
-//         } else{
-//             alert("vc bateu na parede")
-//         }
-
-//     }
-// )
-// $("#left").click(
-//     function () {
-//         $("#playerMario").css('background-color', 'blue').text("Esquerda")
-//         if (posX > 0) {
-//             posX -= 100
-//             $("#playerMario").animate({ left: posX + "px" }, { duration: 200 })
-//         } else{
-//             alert("vc bateu na parede")
-//         }
-
-//     }
-// )
-
 var mario = false;
-var luigi = false
+var luigi = false;
 
 $("#BtnMario").click(
     function () {
@@ -64,9 +34,9 @@ $("#right").click(
             posX += 100
             $("#playerMario").animate({ left: posX + "px" }, { duration: 200 })
         } else {
-            alert("Parece que este é o FIM <->")
+            $("#layout").css("display", "none");
+            $("#containerFim").css("display", "flex");
         }
-
     }
 )
 
@@ -81,7 +51,7 @@ $("#left").click(
             posX -= 100
             $("#playerMario").animate({ left: posX + "px" }, { duration: 200 })
         } else {
-            alert("Parece que este é o FIM <->")
+            alert("Ops Lado errado meu amigo")
         }
 
     }
@@ -105,4 +75,15 @@ $("#jump").click(
     }
 )
 
+$(document).ready(function () {
+    $("#BtnMario").click(function () {
+        $("#audioMario")[0].play();
+    });
+});
+
+$(document).ready(function () {
+    $("#BtnLuigi").click(function () {
+        $("#audioMario")[0].play();
+    });
+});
 

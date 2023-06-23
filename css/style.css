@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+.audioMario {
+    position: absolute;
+    display: none;
+}
+
 .layout {
     position: absolute;
     width: 100%;
@@ -15,13 +20,7 @@
     overflow: hidden;
 }
 
-/* .layout img {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-} */
-
-.fundoMario{
+.fundoMario {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -101,7 +100,7 @@
     padding: 20px;
 }
 
-.screenFim{
+.screenFim {
     position: relative;
     width: 700px;
     height: 370px;
@@ -113,7 +112,7 @@
     padding: 20px;
 }
 
-.containerFim{
+.containerFim {
     width: 100%;
     height: 100vh;
     display: none;
@@ -179,7 +178,7 @@
     margin-top: 60px;
 }
 
-.textFim{
+.textFim {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
@@ -211,8 +210,8 @@
     color: #11d811;
 }
 
-.canoMario{
-    width:  200px;
+.canoMario {
+    width: 200px;
     height: 180px;
     position: absolute;
     margin-left: 1146px;
@@ -220,48 +219,44 @@
     z-index: 2;
 }
 
-.cano{
+.cano {
     width: 175px;
     height: 160px;
     object-fit: cover;
 }
 
-.marioD{
+.marioD {
     width: 95px;
 }
 
-.marioDance{
+.marioDance {
     position: absolute;
     width: 95px;
     height: 95px;
     margin-right: 440px;
 }
 
-.luigiD{
+.luigiD {
     width: 108px;
 }
 
-.luigiDance{
+.luigiDance {
     position: absolute;
     width: 95px;
     height: 95px;
     margin-left: 430px;
 }
 
-.luigiDanceFim{
+.luigiDanceFim {
     position: absolute;
     width: 95px;
     height: 95px;
     margin-left: 500px;
 }
 
-.marioDanceFim{
+.marioDanceFim {
     position: absolute;
     width: 95px;
     height: 95px;
     margin-right: 510px;
 }
-
-
-
-
